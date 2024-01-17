@@ -1,0 +1,83 @@
+@import "../../App.scss";
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4%;
+    margin-bottom: 1%;
+    color: $textColor;
+    font-size: $headerTextSize;
+  }
+
+  .contents-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .desc-container {
+      flex: 1;
+      padding: 3%;
+      flex-direction: column;
+      justify-content: center;
+      width: 45%;
+      min-width: 320px;
+
+      .text {
+        color: $textColor;
+        width: 100%;
+        min-width: 300px;
+        font-size: 1.5rem;
+        text-wrap: wrap;
+
+        @media (max-width: 780px) {
+          font-size: 1.3rem;
+        }
+
+        @media (max-width: 585px) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .photo-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      width: 45%;
+      min-width: 320px;
+
+      .photo {
+        width: 100%;
+        max-width: 324.969px;
+        max-height: 487.453px;
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          border-radius: $mainRadius;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .desc-container,
+      .photo-container {
+        max-width: 100%;
+      }
+
+      .photo {
+        max-width: 90%;
+        max-height: 90%;
+      }
+    }
+  }
+}

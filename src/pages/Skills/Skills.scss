@@ -1,0 +1,75 @@
+@import "../../App.scss";
+
+.skills-container {
+  .header {
+    padding: 3%;
+    .title {
+      display: flex;
+      justify-content: center;
+      color: $textColor;
+      font-size: $headerTextSize;
+    }
+  }
+
+  .contents-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .react-tabs {
+      -webkit-tap-highlight-color: transparent;
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+
+      &__tab-list {
+        border-bottom: 2px solid lighten($color: $shadowColor, $amount: 5%);
+        margin: 0 0 1rem;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      &__tab {
+        display: inline-block;
+        border: 1px solid transparent;
+        border-bottom: none;
+        bottom: -1px;
+        position: relative;
+        list-style: none;
+        padding: 6px 12px;
+        cursor: pointer;
+        color: $textColor;
+        font-size: 1.5rem;
+        transition: all 100ms ease-in-out;
+
+        &--selected {
+          background: $mainColorLight;
+          border-color: $shadowColor;
+          border-radius: 5px 5px 0 0;
+          color: $secondaryColor;
+        }
+
+        &--disabled {
+          cursor: default;
+        }
+
+        &:focus {
+          outline: none;
+        }
+
+        @media (max-width: 585px) {
+          font-size: .9rem;
+        }
+      }
+
+      &__tab-panel {
+        display: none;
+
+        &--selected {
+          display: flex;
+        }
+      }
+    }
+  }
+}

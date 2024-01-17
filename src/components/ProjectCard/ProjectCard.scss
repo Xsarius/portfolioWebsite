@@ -1,0 +1,85 @@
+@import "../../App.scss";
+
+.projects-container {
+    .project-card {
+      color: $textColor;
+      height: 40vh;
+      width: 20vw;
+      border-radius: $mainRadius;
+      box-shadow: 0 0 10px $shadowColor;
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+      margin: 1.5rem;
+
+      &:hover {
+        cursor: pointer;
+        
+        .icon {
+          transform: scale(1.05);
+        }
+      }
+      
+      .contents {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        padding: 6%;
+
+        .icon-container {
+          width: 100%;
+          height: auto;
+          max-height: 60%;
+          margin-bottom: 25px;
+          display: flex;
+          justify-content: center;
+
+          .icon {
+            border-radius: $secondaryRadius;
+            width: 100%;
+            height: auto;
+            transition: transform 200ms ease-in-out;
+          }
+        }
+
+          .title {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-align: center;
+          }
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .project-card {
+        width: 25vw;
+        height: 35vh;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .project-card {
+        width: 30vw;
+        height: 30vh;
+      }
+    }
+  
+    @media (max-width: 600px) {
+      .project-card {
+        width: 45vw;
+        height: 25vh;
+
+        .contents {
+          .title {
+            font-size: 1rem;
+          }
+         }
+
+      }
+    }
+}

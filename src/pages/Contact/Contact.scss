@@ -1,0 +1,146 @@
+@import "../../App.scss";
+
+.contact-container {
+  color: $textColor;
+
+  .header {
+    padding: 3%;
+
+    .title {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      font-size: $headerTextSize;
+    }
+  }
+
+  .details-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 26rem;
+      border-radius: $mainRadius;
+      box-shadow: 0 0 10px $shadowColor;
+      background-color: $boxMainColor;
+      padding: 3%;
+      margin-right: 3%;
+
+      .title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .description {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        .text {
+          margin-bottom: 2rem;
+          word-wrap: break-word;
+        }
+
+        .link {
+          display: inline-block;
+          position: relative;
+          color: $textColor;
+          padding: 6px;
+          text-decoration: none;
+          transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .link::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          background-color: $secondaryColor;
+          left: 0;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+
+        .link:hover {
+          color: $secondaryColor;
+          cursor: pointer;
+        }
+
+        .link:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+
+        .phone {
+          display: block;
+          margin-bottom: 1rem;
+          white-space: normal;
+        }
+
+        .mail {
+          display: block;
+          margin-bottom: 1rem;
+          white-space: normal;
+        }
+
+        .cv {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          font-size: 1.2rem;
+
+          .link {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+
+      .socials {
+        display: flex;
+        justify-content: center;
+
+        .link {
+          display: flex;
+          justify-content: center;
+          margin: 2%;
+          padding: 3%;
+          color: $textColor;
+          text-decoration: none;
+          transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+          .icon {
+            width: 2rem;
+            height: 2rem;
+            transition: transform 0.3s ease-in-out; /* Add transition for icon scaling */
+          }
+
+          &:hover {
+            color: $secondaryColor; /* Change to the desired color on hover */
+            transform: scale(1.1); /* Scale up on hover */
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1050px) {
+      .info-container {
+        margin-bottom: 3%;
+        width: 90%;
+        margin-right: 0;
+        text-align: center;
+
+        .cv {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

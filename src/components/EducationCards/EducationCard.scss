@@ -1,0 +1,126 @@
+@import "../../App.scss";
+
+.education-card {
+  box-shadow: 0 0 10px $shadowColor;
+  color: $textColor;
+  margin-bottom: 1rem;
+
+  .card-contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+
+    .details-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .title {
+        font-size: 2rem;
+        padding-left: 8px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        padding-left: 8px;
+
+        .link {
+          text-decoration: none;
+          color: $textColor;
+          display: flex;
+          align-items: center;
+          transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+          .icon {
+            margin-left: 1%;
+            width: 1rem;
+            height: auto;
+          }
+
+          &:hover {
+            color: $secondaryColor;
+          }
+        }
+      }
+
+      .date {
+        font-size: medium;
+        margin-bottom: 0.3rem;
+        padding-left: 8px;
+      }
+
+      .grade {
+        margin-bottom: 0.3rem;
+        padding-left: 8px;
+      }
+
+      .content {
+        font-size: small;
+        padding-left: 8px;
+      }
+
+      .details-btn {
+
+      }
+    }
+
+    .img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 18%;
+      min-width: 200px;
+      height: auto;
+      padding: 1%;
+
+      img {
+        border-radius: $mainRadius;
+        width: 60%;
+        height: auto;
+        padding: 1%;
+        min-width: 100px;
+      }
+    } 
+  }
+
+  @media (max-width: 780px) {
+  }
+
+  @media (max-width: 585px) {
+    .card-contents {
+      justify-content: center;
+
+      .details-container {
+        justify-content: center;
+        text-align: center;
+
+        .title {
+          font-size: 1.4rem;
+          margin-top: 2%;
+          margin-bottom: 3%;
+        }
+
+        .subtitle {
+          display: flex;
+          justify-content: center;
+          text-wrap: nowrap;
+          padding-left: 0;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    transition: all 100ms ease-in-out;
+    background-color: darken($color: $mainColorDark, $amount: 5%);
+
+    &::after {
+      transition: all 100ms ease-in-out;
+    }
+  }
+}

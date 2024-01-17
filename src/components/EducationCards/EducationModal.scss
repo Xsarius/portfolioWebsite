@@ -1,0 +1,35 @@
+@import "../../App.scss";
+
+.modal-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: min-content;
+  top: 20%;
+  left: 20%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  background-color: $mainColorDark;
+  padding: 3%;
+  border-radius: $mainRadius;
+
+  .body {
+    color: $textColor;
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .desc {
+    }
+  }
+
+  @media (max-width: 585px) {
+
+    .body {
+        .title{
+            font-size: 1.2rem;
+        }
+    }
+  }
+}

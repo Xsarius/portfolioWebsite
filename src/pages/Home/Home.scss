@@ -1,0 +1,130 @@
+@import "../../App.scss";
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .elements {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4%;
+    justify-content: center;
+    height: 85vh;
+    width: 60vw;
+    position: relative;
+    text-align: center;
+
+    .text {
+      font-size: 4rem;
+      color: white;
+      overflow: hidden;
+
+      span {
+        color: $secondaryColor;
+      }
+    }
+
+    .subtext {
+      font-size: 2rem;
+      color: darken($color: white, $amount: 15%);
+    }
+
+    @media (max-width: 780px) {
+      .text {
+        font-size: 3rem;
+
+      }
+  
+      .subtext {
+        font-size: 1.5rem;
+
+      }
+    }
+
+    @media (max-width: 585px) {
+        .text {
+          font-size: 2.5rem;
+
+        }
+    
+        .subtext {
+          font-size: 1.5rem;
+
+        }
+    }
+  }
+
+    .mouse_scroll {
+      margin: 0 auto;
+      width: 24px;
+      height: 100px;
+
+      .m_scroll_arrows {
+        display: block;
+        width: 5px;
+        height: 5px;
+        transform: rotate(45deg);
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        margin: 0 0 3px 4px;
+        width: 16px;
+        height: 16px;
+      }
+
+      .st,
+      .nd,
+      .rd {
+        animation: mouse-scroll 2s infinite;
+      }
+
+      .st {
+        margin-top: 1px;
+        animation-delay: 0.2s;
+        animation-direction: alternate;
+      }
+
+      .nd {
+        margin-top: -6px;
+        animation-delay: 0.4s;
+        animation-direction: alternate;
+      }
+
+      .rd {
+        margin-top: -6px;
+        animation-delay: 0.6s;
+        animation-direction: alternate;
+      }
+    }
+
+    @keyframes mouse-scroll {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  
+      @media (max-width: 585px) {
+        .elements {
+
+          .text {
+            font-size: 2.5rem;
+  
+          }
+      
+          .subtext {
+            font-size: 1.5rem;
+  
+          }
+        }
+      }
+}

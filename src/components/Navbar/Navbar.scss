@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+@import "../../App.scss";
+
+.navbar-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: $mainColor;
+  
+  height: $navbarHeight;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: $textColor;
+  z-index: 10;
+  box-shadow: 0 0 10px $shadowColor;
+
+  .logo {
+    text-decoration: none;
+    color: $textColor;
+  }
+
+  .desktop-navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .items {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      justify-content: center;
+      font-size: x-large;
+
+      .item {
+        display: inline-block;
+        position: relative;
+        margin: 2rem;
+        color: $textColor;
+        padding: 6px;
+        border-radius: 12px;
+        text-decoration: none;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .item::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $secondaryColor;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+
+      .item:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+  }
+
+  .mobile-navbar {
+    .foldable-menu {
+      color: $textColor;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+      margin: 1%;
+    }
+
+    .foldable-menu:hover {
+      transform: scale(1.1);
+    }
+
+    .menu {
+      display: block;
+      transform: scale(0);
+      z-index: 11;
+      position: absolute;
+      top: $navbarHeight;
+      left: 0;
+      width: 100%;
+      background-color: darken($color: $mainColorDark, $amount: 3%);
+      transform-origin: top;
+      opacity: 1;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      
+      &.opened {
+        
+        animation: growDown 500ms ease-in-out forwards;
+      }
+
+      @keyframes growDown {
+        0% {
+          transform: scaleY(0);
+        }
+        80% {
+          transform: scaleY(1.1);
+        }
+        100% {
+          transform: scaleY(1);
+        }
+      }
+
+      &.closed {
+        animation: shrinkUp 500ms ease-in-out forwards;
+      }
+    
+      @keyframes shrinkUp {
+        0% {
+          transform: scaleY(1);
+        }
+        20% {
+          transform: scaleY(1.1);
+        }
+        100% {
+          transform: scaleY(0);
+        }
+      }
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: flex-start;
+        font-size: 1.5rem;
+        height: 100vh;
+
+        .item {
+          display: flex;
+          justify-content: center;
+          color: $textColor;
+          padding: 6px;
+          margin: 2rem;
+          border-radius: 12px;
+          text-decoration: none;
+          transition: transform 0.3s ease-in-out;
+
+          &:focus &:hover {
+            transition: all 100ms ease-out;
+            background-color: lighten($color: $mainColorDark, $amount: 30%);
+          }
+        }
+      }
+    }
+  }
+
+  .foldable-menu {
+    display: none;
+  }
+
+  @media (max-width: 1050px) {
+    .desktop-navbar {
+      display: none;
+    }
+
+    .mobile-navbar {
+      .foldable-menu {
+        display: inline-block;
+      }
+    }
+  }
+}

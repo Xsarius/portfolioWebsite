@@ -1,0 +1,53 @@
+{
+  "proj1": {
+    "title": "Varsonalia PW - Event website",
+    "coverImg": "/img/Projects/varsonalia.jpg",
+    "modal": {
+      "title": "Varsonalia PW - Event website",
+      "desc": "I spearheaded a dynamic project focused on crafting a comprehensive website dedicated to student concerts and events. As the project lead, my responsibilities encompassed team coordination, client communication, and overseeing both frontend and backend development. Our frontend was meticulously built using React, while Django powered the robust backend infrastructure. A standout feature of the website was the integration of a live message panel. This innovative element allowed attendees to share real-time messages, enhancing audience engagement and providing a dynamic element to be displayed on a large stage screen during events. Throughout the project, I successfully led a talented team of student software developers, ensuring seamless collaboration and effective communication channels. The end result was a user-friendly and visually appealing platform that met the unique needs of student concerts, combining the power of React and Django to deliver a captivating and interactive event experience."
+      ,
+      "imgSrc": "/img/Projects/varsonalia",
+      "imgNum": "6"
+    }
+  },
+  "proj2": {
+    "title": "Smarthome system",
+    "coverImg": "/img/Projects/smarthome.jpg",
+    "modal": {
+      "title": "Smarthome system",
+      "desc": "Description",
+      "imgSrc": "/img/Projects/smarthome",
+      "imgNum": "6"
+    }
+  },
+  "proj3": {
+    "title": "Embedded interpreter",
+    "coverImg": "/img/Projects/embedded.jpg",
+    "modal": {
+      "title": "Embedded interpreter",
+      "desc": "Description",
+      "imgSrc": "/img/Projects/embedded",
+      "imgNum": "6"
+    }
+  },
+  "proj4": {
+    "title": "Embedded firmware",
+    "coverImg": "/img/Projects/firmware.jpeg",
+    "modal": {
+      "title": "Embedded firmware",
+      "desc": "Description",
+      "imgSrc": "/img/Projects/firmware",
+      "imgNum": "6"
+    }
+  },
+  "proj5": {
+    "title": "Underwater camera - PCB design",
+    "coverImg": "/img/Projects/anemo.jpg",
+    "modal": {
+      "title": "Underwater camera - PCB design",
+      "desc": "I led the design and development of an advanced submersible camera system aimed at monitoring marine life. The primary objective was to enhance battery efficiency to address the challenge of short battery life. The core electronics were built around the STM32L073RB chip, featuring DC-DC converters for optimal power management.\n\nThe comprehensive design encompassed a sophisticated battery pack, SPI interface for I/O expander, SD card integration, and communication protocols such as RS485 MODBUS and UART with a secondary Raspberry Pi Zero unit.\n\nThe project's pivotal focus on low-power CPU implementation significantly extended the device's battery life, propelling the overall advancement of the underwater monitoring solution. The culmination of efforts resulted in the successful manufacturing and testing of the printed circuit board (PCB), accompanied by the development of a robust firmware to control the system.\n\nAs the project lead, I undertook responsibilities spanning the entire design and programming lifecycle, ensuring a seamless integration of hardware and software components for an efficient and reliable submersible camera system.",
+      "imgSrc": "/img/Projects/anemo",
+      "imgNum": "5"
+    }
+  }
+}

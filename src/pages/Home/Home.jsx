@@ -9,6 +9,8 @@ const Home = () => {
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
 
+  let displayDuration = 1000;
+
   return (
     <div className="home-container">
       <div className="elements">
@@ -17,13 +19,13 @@ const Home = () => {
           <TypeAnimation
             sequence={[
               "a Fullstack developer",
-              2000,
+              displayDuration,
               "an Embedded developer",
-              2000,
+              displayDuration,
               "an Electrical engineer",
-              2000,
+              displayDuration,
               "a Passionate programer",
-              2000,
+              displayDuration,
             ]}
             wrapper="span"
             cursor={true}

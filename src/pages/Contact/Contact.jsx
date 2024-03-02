@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Contact = () => {
   const handleDownloadClick = () => {
-    const filePath = process.env.PUBLIC_URL + '/CV_Kuba_Jaloszynski.pdf';
+    const filePath = '/CV_Kuba_Jaloszynski.pdf';
     
     const link = document.createElement('a');
     link.href = filePath;
@@ -46,10 +46,10 @@ const Contact = () => {
             </span>
           </div>
           <div className="socials">
-            <Link className="link" target="_blank" to="https://www.linkedin.com/in/kubajaloszynski/">
+            <Link className="link" target="_blank" rel="noopener noreferrer" to="https://www.linkedin.com/in/kubajaloszynski/">
               <LinkedInIcon className="icon" />
             </Link>
-            <Link className="link" target="_blank" to="https://github.com/Xsarius">
+            <Link className="link" target="_blank" rel="noopener noreferrer" to="https://github.com/Xsarius">
               <GitHubIcon className="icon"/>
             </Link>
           </div>

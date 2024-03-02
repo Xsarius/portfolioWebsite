@@ -2,11 +2,11 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Grid } from "@mui/material";
 import EducationCard from "../../components/EducationCards/EducationCard";
 import SkillsCard from "../../components/SkillsCard/SkillsCard";
+import data from "./skillsData.json";
 import "./Skills.scss";
 
 const Skills = () => {
 
-  let data = require("./skillsData.json");
   let skillsData = data["skillsData"];
   let jobsData = data["jobsData"];
   let educationData = data["educationData"];

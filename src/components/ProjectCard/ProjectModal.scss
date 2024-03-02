@@ -32,6 +32,7 @@
       .carousel {
         width: 100%;
         height: auto;
+        max-height: 80vh;
         border-radius: 10px;
         overflow: hidden;
         margin-bottom: 2rem;
@@ -53,15 +54,22 @@
       .desc {
         font-size: 1.3rem;
         height: auto;
+
+        .chunk {
+          text-indent: 1.5rem;
+          margin-bottom: 1%;
+        }
       }
 
-      @media (max-width: 780px) {
-
+      @media (max-width: 900px) {
+        .carousel{
+          display: none;
+        }
       }
 
       @media (max-width: 585px) {
         .title {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
         }
 
         .desc {

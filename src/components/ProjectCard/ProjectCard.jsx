@@ -11,12 +11,10 @@ import "./ProjectCard.scss";
 const ProjCard = (props) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
-    console.log("1");
     setOpen(true);
   };
 
   const handleClose = () => {
-    console.log("2");
     setOpen(false);
   };
 

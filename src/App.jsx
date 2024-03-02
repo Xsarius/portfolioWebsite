@@ -25,16 +25,16 @@ function App() {
                 <React.Fragment>
                   <Section component={<Home />} />
                   <Section component={<About />} />
-                  <Section component={<Projects />} />
                   <Section component={<Skills />} />
+                  <Section component={<Projects />} />
                   <Section component={<Contact />} />
-                  <Footer />
                 </React.Fragment>
               }
             />
             <Route path="*" element={<Section component={<NotFound404 />} />} />
           </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
     </div>
   );

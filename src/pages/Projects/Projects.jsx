@@ -1,10 +1,9 @@
 import { Grid } from "@mui/material";
 import ProjCard from "../../components/ProjectCard/ProjectCard";
+import projectsData from './projectsData.json';
 import "./Projects.scss";
 
 const Projects = () => {
-  let projectsData = require('./projectsData.json');
-
   return (
     <div className="projects-container" id="projects">
       <div className="header">

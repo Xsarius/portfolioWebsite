@@ -3,52 +3,52 @@
     "skill1": {
       "title": "C",
       "img": "/img/Skills/C.png",
-      "hours": "200"
+      "hours": "2400"
     },
     "skill2": {
       "title": "Python",
       "img": "/img/Skills/python.png",
-      "hours": "200"
+      "hours": "1400"
     },
     "skill3": {
       "title": "Rust",
       "img": "/img/Skills/rust.png",
-      "hours": "200"
+      "hours": "150"
     },
     "skill4": {
       "title": "Docker",
       "img": "/img/Skills/docker.png",
-      "hours": "200"
+      "hours": "300"
     },
     "skill5": {
       "title": "Django",
       "img": "/img/Skills/django.png",
-      "hours": "200"
+      "hours": "300"
     },
     "skill6": {
       "title": "Electronics design",
       "img": "/img/Skills/electronics_design.png",
-      "hours": "200"
+      "hours": "700"
     },
     "skill7": {
       "title": "React",
       "img": "/img/Skills/react.png",
-      "hours": "200"
+      "hours": "250"
     },
     "skill8": {
       "title": "STM32 (M0+/M7)",
       "img": "/img/Skills/stm32.png",
-      "hours": "200"
+      "hours": "1200"
     },
     "skill9": {
       "title": "Modbus RTU",
       "img": "/img/Skills/modbus.png",
-      "hours": "200"
+      "hours": "250"
     },
     "skill10": {
       "title": "Linux (Ubuntu)",
       "img": "/img/Skills/ubuntu.png",
-      "hours": "200"
+      "hours": "1000"
     }
   },
   "jobsData": {

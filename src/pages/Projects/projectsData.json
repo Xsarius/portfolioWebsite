@@ -4,8 +4,7 @@
     "coverImg": "/img/Projects/varsonalia.jpg",
     "modal": {
       "title": "Varsonalia PW - Event website",
-      "desc": "I spearheaded a dynamic project focused on crafting a comprehensive website dedicated to student concerts and events. As the project lead, my responsibilities encompassed team coordination, client communication, and overseeing both frontend and backend development. Our frontend was meticulously built using React, while Django powered the robust backend infrastructure. A standout feature of the website was the integration of a live message panel. This innovative element allowed attendees to share real-time messages, enhancing audience engagement and providing a dynamic element to be displayed on a large stage screen during events. Throughout the project, I successfully led a talented team of student software developers, ensuring seamless collaboration and effective communication channels. The end result was a user-friendly and visually appealing platform that met the unique needs of student concerts, combining the power of React and Django to deliver a captivating and interactive event experience."
-      ,
+      "desc": "I spearheaded a dynamic project focused on crafting a comprehensive website dedicated to student concerts and events. As the project lead, my responsibilities encompassed team coordination, client communication, and overseeing both frontend and backend development. Our frontend was meticulously built using React, while Django powered the robust backend infrastructure. A standout feature of the website was the integration of a live message panel. This innovative element allowed attendees to share real-time messages, enhancing audience engagement and providing a dynamic element to be displayed on a large stage screen during events. Throughout the project, I successfully led a talented team of student software developers, ensuring seamless collaboration and effective communication channels. The end result was a user-friendly and visually appealing platform that met the unique needs of student concerts, combining the power of React and Django to deliver a captivating and interactive event experience.",
       "imgSrc": "/img/Projects/varsonalia",
       "imgNum": "6"
     }
@@ -15,29 +14,29 @@
     "coverImg": "/img/Projects/smarthome.jpg",
     "modal": {
       "title": "Smarthome system",
-      "desc": "Description",
+      "desc": "I upgraded my home using OpenHAB, a smart home system. I made regular lights smart by tweaking Sonoff Mini R2 switches. Also, I built a gadget with ESP32 to automate window blinds. Everything connects through WiFi using MQTT, letting me control it all from one place. It's a DIY setup that adds convenience and energy savings to daily life.",
       "imgSrc": "/img/Projects/smarthome",
-      "imgNum": "6"
+      "imgNum": "0"
     }
   },
   "proj3": {
-    "title": "Embedded interpreter",
+    "title": "",
     "coverImg": "/img/Projects/embedded.jpg",
     "modal": {
       "title": "Embedded interpreter",
-      "desc": "Description",
+      "desc": "I led a project to build an Embedded Interpreter for a custom language that controls robotic arms. My role involved talking with the client and making the language work using Flex and Bison C frameworks. Now, it's the brains behind making robotic arms do their thing.",
       "imgSrc": "/img/Projects/embedded",
-      "imgNum": "6"
+      "imgNum": "0"
     }
   },
   "proj4": {
-    "title": "Embedded firmware",
+    "title": "Embedded firmware / Embedded interpreter",
     "coverImg": "/img/Projects/firmware.jpeg",
     "modal": {
-      "title": "Embedded firmware",
-      "desc": "Description",
+      "title": "Embedded firmware / interpreter",
+      "desc": "I built the entire firmware from the ground up for a PLC controller extension unit. This multipurpose device handles Digital and Analog IO tasks seamlessly. My tech toolkit included UART, MODBUS RTU, I2C, and Onewire, making it a versatile and efficient piece of embedded magic.",
       "imgSrc": "/img/Projects/firmware",
-      "imgNum": "6"
+      "imgNum": "0"
     }
   },
   "proj5": {
@@ -47,6 +46,16 @@
       "title": "Underwater camera - PCB design",
       "desc": "I led the design and development of an advanced submersible camera system aimed at monitoring marine life. The primary objective was to enhance battery efficiency to address the challenge of short battery life. The core electronics were built around the STM32L073RB chip, featuring DC-DC converters for optimal power management.\n\nThe comprehensive design encompassed a sophisticated battery pack, SPI interface for I/O expander, SD card integration, and communication protocols such as RS485 MODBUS and UART with a secondary Raspberry Pi Zero unit.\n\nThe project's pivotal focus on low-power CPU implementation significantly extended the device's battery life, propelling the overall advancement of the underwater monitoring solution. The culmination of efforts resulted in the successful manufacturing and testing of the printed circuit board (PCB), accompanied by the development of a robust firmware to control the system.\n\nAs the project lead, I undertook responsibilities spanning the entire design and programming lifecycle, ensuring a seamless integration of hardware and software components for an efficient and reliable submersible camera system.",
       "imgSrc": "/img/Projects/anemo",
+      "imgNum": "5"
+    }
+  },
+  "proj6": {
+    "title": "Car Sharing Seeker - Mobile App",
+    "coverImg": "/img/Projects/greenmobilityseeker.jpg",
+    "modal": {
+      "title": "Car Sharing Seeker - Mobile App",
+      "desc": "The app was made to quickly find Green Mobility cars in users nearby that can be put to charging for which user gets free minutes for future trips with the car sharing. It uses open APIs for retrieving cars and EV chargers data, which is then used to calculate distance from the user and to the charger and net gain minutes. This app was a challenge to try putting myself into rapid development of an idea with little experience in mobile app development, from very beginning, sketching the project to prototype phase. Total development time was 72h to first working iteration installed on a test device. An important part in this process played AI (ChatGPT) which allowed for the high pace of development. AI was used to generate the core of the codebase and my focus was shifted into adjusting the code.",
+      "imgSrc": "/img/Projects/greenmobilityseeker",
       "imgNum": "5"
     }
   }

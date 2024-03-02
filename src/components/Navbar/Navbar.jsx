@@ -58,18 +58,18 @@ function Navbar() {
           <HashLink
             className="item"
             smooth
-            to="/#projects"
-            scroll={(el) => scrollWithOffset(el)}
-          >
-            Projects
-          </HashLink>
-          <HashLink
-            className="item"
-            smooth
             to="/#experience"
             scroll={(el) => scrollWithOffset(el)}
           >
             Resume
+          </HashLink>
+          <HashLink
+            className="item"
+            smooth
+            to="/#projects"
+            scroll={(el) => scrollWithOffset(el)}
+          >
+            Projects
           </HashLink>
           <HashLink
             className="item"

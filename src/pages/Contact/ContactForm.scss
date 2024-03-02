@@ -5,26 +5,30 @@
     justify-content: center;
     width: 40rem;
     border-radius: $mainRadius;
-    box-shadow: 0 0 10px $shadowColor;
     background-color: $boxMainColor;   
     padding: 5%;
 
-    .form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        .phone-input {
-            color: $textColor; 
-        }
+    .phone-input {
+        color: $textColor; 
+    }
 
-        .message-input {
-            height: 10%;
-        }
+    .message-input {
+        height: 10%;
+    }
 
-        .btn {
-            margin-top: 4%;
+    .btn {
+        margin-top: 4%;
+    }
+
+    .icon {
+        position: absolute;
+        top: 20%;
+        left: 1%;
+        transition: opacity .3s ease-in;
+        opacity: 0;
+
+        &.visible {
+            opacity: 1;
         }
     }
 }

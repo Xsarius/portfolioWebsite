@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 
 function useOutsideAlerter(ref, func) {
   useEffect(() => {
-
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
         func();
@@ -32,14 +31,51 @@ const ProjectCardModal = ({ enablePictures = false, onClose, ...props }) => {
     changeImageSrc(index, src);
   }
 
+  const splitDescription = (desc) => {
+    const chunks = [];
+    let remainingDesc = desc;
+    const CHAR_NUM = 100;
 
+    while (remainingDesc.length > 0) {
+      let dotIndex = remainingDesc.indexOf(".");
+
+      if (dotIndex === -1)
+      {
+        chunks.push(remainingDesc);
+        break;
+      }
+
+      let splitIndex = dotIndex + 1;
+
+      chunks.push(remainingDesc.substring(0, splitIndex));
+
+      remainingDesc = remainingDesc.substring(splitIndex).trim();
+
+      if(splitIndex < 100)
+      {
+        splitIndex = remainingDesc.indexOf(".") + 1;
+        
+        let prevDesc = chunks[chunks.length - 1];
+        let nextDesc = remainingDesc.substring(0,splitIndex);
+        
+        let newDesc = prevDesc.concat(' ', nextDesc);
+
+        chunks.pop();
+        chunks.push(newDesc);
+
+        remainingDesc = remainingDesc.substring(splitIndex).trim();
+      }
+    }
+
+    return chunks;
+  };
 
   return (
     <div className="modal-container">
       <div className="modal" ref={wrapperRef}>
         <div className="body">
-        <div className="title">{props.title}</div>
-          {enablePictures && (
+          <div className="title">{props.title}</div>
+          {(enablePictures && props.imgNum) ? (
             <Carousel
               className="carousel"
               changeOnFirstRender
@@ -49,17 +85,18 @@ const ProjectCardModal = ({ enablePictures = false, onClose, ...props }) => {
               animation="slide"
             >
               {imagePaths.map((path, index) => (
-                <img
-                  className="image"
-                  key={index}
-                  src={path}
-                  alt=""
-                />
+                <img className="image" key={index} src={path} alt="" />
               ))}
             </Carousel>
-          )}
-          
-          <div className="desc">{props.desc}</div>
+          ) : <></>}
+
+          <div className="desc">
+            {splitDescription(props.desc).map((chunk, index) => (
+              <div className="chunk" key={index}>
+                {chunk}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

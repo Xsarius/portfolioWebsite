@@ -1,6 +1,7 @@
 import Carousel from "react-material-ui-carousel";
 import "./ProjectModal.scss";
 import { useEffect, useRef } from "react";
+import { Box, Divider, Paper } from "@mui/material";
 
 function useOutsideAlerter(ref, func) {
   useEffect(() => {
@@ -89,6 +90,20 @@ const ProjectCardModal = ({ enablePictures = false, onClose, ...props }) => {
               ))}
             </Carousel>
           ) : <></>}
+
+          <Box className="details">
+            <Box sx={{maxWidth: "150px", paddingLeft: "20px", paddingRight: "20px" ,display: "flex", justifyContent: "center", marginRight: "16px", textAlign: "center"}}>
+                Duration: {props.duration}
+            </Box>
+            <Divider orientation="vertical" flexItem variant="middle" sx={{backgroundColor: "#ffffff"}}/>
+            <Box sx={{maxWidth: "80%" ,display: "flex", flexDirection: "row", flexWrap: "wrap" ,marginLeft: "16px"}}>
+                Tags:{props.tags.map((tag, index) => (
+                  <Paper className="tag">
+                    #{tag}
+                  </Paper>
+                ))}
+            </Box>
+          </Box>
 
           <div className="desc">
             {splitDescription(props.desc).map((chunk, index) => (

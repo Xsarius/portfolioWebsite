@@ -18,40 +18,47 @@
     text-align: center;
 
     .text {
-      font-size: 4rem;
+      font-size: 3.5rem;
       color: white;
       overflow: hidden;
 
       span {
         color: $secondaryColor;
+        font-size: 2.5rem;
       }
     }
 
     .subtext {
-      font-size: 2rem;
+      font-size: 1.7rem;
       color: darken($color: white, $amount: 15%);
     }
 
     @media (max-width: 780px) {
       .text {
-        font-size: 3rem;
+        font-size: 2rem;
 
+        span {
+          font-size: 1.5rem;
+        }
       }
   
       .subtext {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
 
       }
     }
 
     @media (max-width: 585px) {
         .text {
-          font-size: 2.5rem;
+          font-size: 1.8rem;
 
+          span {
+            font-size: 1.25rem;
+          }
         }
     
         .subtext {
-          font-size: 1.5rem;
+          font-size: 1.2rem;
 
         }
     }
@@ -112,19 +119,4 @@
         opacity: 1;
       }
     }
-  
-      @media (max-width: 585px) {
-        .elements {
-
-          .text {
-            font-size: 2.5rem;
-  
-          }
-      
-          .subtext {
-            font-size: 1.5rem;
-  
-          }
-        }
-      }
 }

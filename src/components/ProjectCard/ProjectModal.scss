@@ -51,6 +51,21 @@
         height: auto;
       }
 
+      .details {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-items: center;
+        min-height: 32px;
+        font-size: 1.15rem;
+
+        .tag {
+          margin-left: 8px;
+        }
+      }
+
       .desc {
         font-size: 1.3rem;
         height: auto;

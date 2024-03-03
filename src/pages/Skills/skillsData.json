@@ -3,7 +3,7 @@
     "skill1": {
       "title": "C",
       "img": "/img/Skills/C.png",
-      "hours": "2400"
+      "hours": "2500"
     },
     "skill2": {
       "title": "Python",
@@ -48,7 +48,17 @@
     "skill10": {
       "title": "Linux (Ubuntu)",
       "img": "/img/Skills/ubuntu.png",
-      "hours": "1000"
+      "hours": "1200"
+    },
+    "skills11": {
+      "title": "FreeRTOS",
+      "img": "/img/Skills/freertos.png",
+      "hours": "50"
+    },
+    "skill12": {
+      "title": "ATMEL AVR",
+      "img": "/img/Skills/atmega.jpg",
+      "hours": "200"
     }
   },
   "jobsData": {
@@ -64,7 +74,7 @@
       "title": "Embedded software / Electrical Engineer",
       "subtitle": "Anemorobotics ApS",
       "date_from": "Oct 2023",
-      "date_to": "Present",
+      "date_to": "Dec 2023",
       "link_to": "https://anemorobotics.com/",
       "img": "/img/Employers/anemorobotics.jpeg"
     },

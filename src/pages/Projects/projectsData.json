@@ -4,9 +4,11 @@
     "coverImg": "/img/Projects/varsonalia.jpg",
     "modal": {
       "title": "Varsonalia PW - Event website",
-      "desc": "I spearheaded a dynamic project focused on crafting a comprehensive website dedicated to student concerts and events. As the project lead, my responsibilities encompassed team coordination, client communication, and overseeing both frontend and backend development. Our frontend was meticulously built using React, while Django powered the robust backend infrastructure. A standout feature of the website was the integration of a live message panel. This innovative element allowed attendees to share real-time messages, enhancing audience engagement and providing a dynamic element to be displayed on a large stage screen during events. Throughout the project, I successfully led a talented team of student software developers, ensuring seamless collaboration and effective communication channels. The end result was a user-friendly and visually appealing platform that met the unique needs of student concerts, combining the power of React and Django to deliver a captivating and interactive event experience.",
+      "desc": "Varsonalia / Juwenalia PW is a music event hosted by Warsaw University of Technology every year. In the 2023 edition I was main responsible for leading the team of 4 (including me) building from scratch and deploying event’s website with required software. Project was divided into 2 main parts. First was the front-end application, built according to obtained design. Core of the app was static CSR website with two dynamic parts, one being photo gallery and the other being chat for sending user’s message to main stage large screen. Main technology used in the front-end app was React.js. The backend app run photo gallery and panel for messages moderation before sending them onto the stage screen. Backend was created in Django with PostgreSQL database, nginx reverse-proxy, all deployed on Google Cloud Platform. Overall project was a great success as the whole application was used throughout the event with no major issues and was used by more than 3000 users during the event.",
       "imgSrc": "/img/Projects/varsonalia",
-      "imgNum": "6"
+      "imgNum": "6",
+      "duration": "7 months",
+      "tags": ["React.js", "Scss", "Django", "PostgreSQL", "REST API", "Docker", "Python", "GCP"]
     }
   },
   "proj2": {
@@ -16,27 +18,33 @@
       "title": "Smarthome system",
       "desc": "I upgraded my home using OpenHAB, a smart home system. I made regular lights smart by tweaking Sonoff Mini R2 switches. Also, I built a gadget with ESP32 to automate window blinds. Everything connects through WiFi using MQTT, letting me control it all from one place. It's a DIY setup that adds convenience and energy savings to daily life.",
       "imgSrc": "/img/Projects/smarthome",
-      "imgNum": "0"
+      "imgNum": "0",
+      "duration": "3 month",
+      "tags": ["C", "MQTT", "REST API", "ESP32", "IoT"]
     }
   },
   "proj3": {
-    "title": "",
+    "title": "Embedded interpreter",
     "coverImg": "/img/Projects/embedded.jpg",
     "modal": {
       "title": "Embedded interpreter",
       "desc": "I led a project to build an Embedded Interpreter for a custom language that controls robotic arms. My role involved talking with the client and making the language work using Flex and Bison C frameworks. Now, it's the brains behind making robotic arms do their thing.",
       "imgSrc": "/img/Projects/embedded",
-      "imgNum": "0"
+      "imgNum": "0",
+      "duration": "7 months",
+      "tags": ["C", "Bison&Flex", "Python", "Teensy4.1(Cortex-M7)"]
     }
   },
   "proj4": {
-    "title": "Embedded firmware / Embedded interpreter",
+    "title": "Embedded firmware",
     "coverImg": "/img/Projects/firmware.jpeg",
     "modal": {
-      "title": "Embedded firmware / interpreter",
+      "title": "Embedded firmware",
       "desc": "I built the entire firmware from the ground up for a PLC controller extension unit. This multipurpose device handles Digital and Analog IO tasks seamlessly. My tech toolkit included UART, MODBUS RTU, I2C, and Onewire, making it a versatile and efficient piece of embedded magic.",
       "imgSrc": "/img/Projects/firmware",
-      "imgNum": "0"
+      "imgNum": "0",
+      "duration": "6 months",
+      "tags": ["C", "Python", "SPI", "I2C", "1-Wire", "Modbus", "STM32(Cortex-M0+)"]
     }
   },
   "proj5": {
@@ -46,7 +54,9 @@
       "title": "Underwater camera - PCB design",
       "desc": "I led the design and development of an advanced submersible camera system aimed at monitoring marine life. The primary objective was to enhance battery efficiency to address the challenge of short battery life. The core electronics were built around the STM32L073RB chip, featuring DC-DC converters for optimal power management.\n\nThe comprehensive design encompassed a sophisticated battery pack, SPI interface for I/O expander, SD card integration, and communication protocols such as RS485 MODBUS and UART with a secondary Raspberry Pi Zero unit.\n\nThe project's pivotal focus on low-power CPU implementation significantly extended the device's battery life, propelling the overall advancement of the underwater monitoring solution. The culmination of efforts resulted in the successful manufacturing and testing of the printed circuit board (PCB), accompanied by the development of a robust firmware to control the system.\n\nAs the project lead, I undertook responsibilities spanning the entire design and programming lifecycle, ensuring a seamless integration of hardware and software components for an efficient and reliable submersible camera system.",
       "imgSrc": "/img/Projects/anemo",
-      "imgNum": "5"
+      "imgNum": "5",
+      "duration": "4 months",
+      "tags": ["C", "Python", "Rust", "SPI", "I2C", "Modbus", "STM32(Cortex-M0+)"]
     }
   },
   "proj6": {
@@ -56,7 +66,9 @@
       "title": "Car Sharing Seeker - Mobile App",
       "desc": "The app was made to quickly find Green Mobility cars in users nearby that can be put to charging for which user gets free minutes for future trips with the car sharing. It uses open APIs for retrieving cars and EV chargers data, which is then used to calculate distance from the user and to the charger and net gain minutes. This app was a challenge to try putting myself into rapid development of an idea with little experience in mobile app development, from very beginning, sketching the project to prototype phase. Total development time was 72h to first working iteration installed on a test device. An important part in this process played AI (ChatGPT) which allowed for the high pace of development. AI was used to generate the core of the codebase and my focus was shifted into adjusting the code.",
       "imgSrc": "/img/Projects/greenmobilityseeker",
-      "imgNum": "5"
+      "imgNum": "5",
+      "duration": "48 hours",
+      "tags": ["Dart", "Mobile"]
     }
   }
 }
